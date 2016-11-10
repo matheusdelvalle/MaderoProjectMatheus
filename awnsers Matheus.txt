@@ -1,0 +1,13 @@
+2 - The output is :
+location is null
+01/01/001 00:00:00
+
+Location is a string variable(native type), so you should inicializete it. DateTime already had value because the default value in the constructor of this class is 01/01/001 00:00:00.
+
+
+3- Its not valid, because DateTime is non-nullable, so it can be null.
+
+5- The output is empity, because the async task has independent behavior, so, when you call SaySomethin the task start, and the Main project continues running. When you put 5ms of delay in the task, the program already showed the value of the result, but the result didnt change his value yet.
+
+If you replace "await Task.Delay(5)" to "Thread.Sleep(5)" the answer will change to "Hello world", because you will make the main Thread sleep for 5ml, no only the async Task.
+
