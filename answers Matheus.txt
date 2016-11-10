@@ -11,3 +11,16 @@ Location is a string variable(native type), so you should inicializete it. DateT
 
 If you replace "await Task.Delay(5)" to "Thread.Sleep(5)" the answer will change to "Hello world", because you will make the main Thread sleep for 5ml, no only the async Task.
 
+6- 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+In the first for, you just add the values on the list. After that, you print it using the foreach.
